@@ -9,12 +9,13 @@ async function getWeather(){
     let result=await fetch(url);
     let ob=await result.json();
     var a=document.getElementById("display");
-    a.innerHTML='<p id="country">'+"COUNTRY NAME: "+'</p><br>'+'<p id="max_temp">'+"MAXIMUM TEMPERATURE IS : "+ob.list[0].main.temp_max+'</p><br>'+
-    '<p id="min_temp">'+"MINIMUM TEMPERATURE IS : "+ob.list[0].main.temp_min+'</p><br>'+
-    '<p id="humidity">'+"HUMIDITY : "+ob.list[0].main.humidity+'</p><br>';
+   
     label=[];
     data=[];
     var time=ob.list[0].dt_txt.split(" ")[1];
+     a.innerHTML='<p id="country">'+"COUNTRY NAME: "+'</p><br>'+'<p id="max_temp">'+"MAXIMUM TEMPERATURE IS : "+ob.list[0].main.temp_max+'</p><br>'+
+    '<p id="min_temp">'+"MINIMUM TEMPERATURE IS : "+ob.list[0].main.temp_min+'</p><br>'+
+    '<p id="humidity">'+"HUMIDITY : "+ob.list[0].main.humidity+'</p><br>';
     for(i=0;i<40; i+=8;){
         var date=ob.list[i].dt_txt.split(" ");
         label.push(date[0]);
