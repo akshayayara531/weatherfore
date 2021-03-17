@@ -30,6 +30,7 @@ async function getWeather(){
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'];
+        
         datasets: [{
             label: label,
             data: data,
