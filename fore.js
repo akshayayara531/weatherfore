@@ -29,7 +29,7 @@ async function getWeather(){
     var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'];
         datasets: [{
             label: label,
             data: data,
@@ -39,7 +39,7 @@ async function getWeather(){
                 'rgba(255,205,1,0.8)',
                 'rgba(1,255,1,0.8)',
                 'rgba(155,100,255,0.8)',
-                'rgba(255,140,45,0.8)'
+              
             ],
             borderColor: [
                 'rgba(255,1,1,0.8)',
@@ -47,7 +47,7 @@ async function getWeather(){
                 'rgba(255,205,1,0.8)',
                 'rgba(1,255,1,0.8)',
                 'rgba(155,100,255,0.8)',
-                'rgba(255,140,45,0.8)'
+             
             ],
             borderWidth: 1
         }]
